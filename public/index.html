@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pages Site — Hibiscus Serendipity</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="A minimal static site scaffolded for GitHub Pages." />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Hibiscus Serendipity</h1>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to your new site</h2>
+          <p class="lead">A lightweight static site scaffold, ready for GitHub Pages.</p>
+          <p><a class="cta" href="#about">Get started</a></p>
+        </div>
+      </section>
+
+      <section id="features" class="container features">
+        <h3>Features</h3>
+        <ul>
+          <li>Fully static — fast and simple</li>
+          <li>Responsive layout with a single stylesheet</li>
+          <li>Automatic deploy via GitHub Actions to Pages</li>
+        </ul>
+      </section>
+
+      <section id="about" class="container about">
+        <h3>About</h3>
+        <p>This scaffold is intentionally small so you can extend it however you like — add a static site generator, page templates, or a build step.</p>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h3>Contact</h3>
+        <p>Replace this section with your contact details or a contact form integration.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Hibiscus Serendipity — Built with care.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
